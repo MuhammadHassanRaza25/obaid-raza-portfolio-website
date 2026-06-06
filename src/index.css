@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-display: "Instrument Serif", serif;
+  --bg: 0 0% 4%;
+  --surface: 0 0% 8%;
+  --text: 0 0% 96%;
+  --muted: 0 0% 53%;
+  --stroke: 0 0% 12%;
+  --accent: 0 0% 96%;
+}
+
+@theme {
+  --font-body: "Inter", sans-serif;
+  --font-display: "Instrument Serif", serif;
+  --color-bg: hsl(var(--bg));
+  --color-surface: hsl(var(--surface));
+  --color-text-primary: hsl(var(--text));
+  --color-muted: hsl(var(--muted));
+  --color-stroke: hsl(var(--stroke));
+  --color-accent: hsl(var(--accent));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: hsl(var(--bg));
+  color: hsl(var(--text));
+  overflow-x: hidden;
+}
+
+.accent-gradient {
+  background: linear-gradient(90deg, #89aacc 0%, #4e85bf 100%);
+}
+
+.gradient-border-ring {
+  position: relative;
+}
+
+.gradient-border-ring::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #89aacc 0%, #4e85bf 100%);
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+  z-index: -1;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+@keyframes role-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 1.5s ease-in-out infinite;
+}
+
+.animate-role-fade-in {
+  animation: role-fade-in 0.4s ease-out;
+}
+
+.halftone-overlay {
+  background-image: radial-gradient(circle, #000 1px, transparent 1px);
+  background-size: 4px 4px;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+}
