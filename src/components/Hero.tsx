@@ -65,15 +65,14 @@ export default function Hero() {
         </p>
 
         <p className="blur-in mx-auto mb-12 max-w-md text-sm text-muted md:text-base">
-          Designing seamless digital interactions by focusing on the unique
-          nuances which bring systems to life.
+         Designing thoughtful visuals that turn ideas into memorable digital experiences.
         </p>
 
         <div className="blur-in inline-flex flex-wrap justify-center gap-4">
           <button
             type="button"
             onClick={scrollToWorks}
-            className="group relative rounded-full bg-text-primary px-7 py-3.5 text-sm text-bg transition-transform hover:scale-105 hover:bg-bg hover:text-text-primary"
+            className="group relative rounded-full bg-text-primary px-7 py-3.5 text-sm text-bg transition-transform hover:scale-105 hover:bg-bg hover:text-text-primary cursor-pointer"
           >
             <span className="absolute inset-[-2px] rounded-full opacity-0 transition-opacity group-hover:opacity-100 accent-gradient" />
             <span className="relative">See Works</span>
@@ -82,7 +81,7 @@ export default function Hero() {
           <button
             type="button"
             onClick={scrollToContact}
-            className="group relative rounded-full border-2 border-stroke bg-bg px-7 py-3.5 text-sm text-text-primary transition-transform hover:scale-105 hover:border-transparent"
+            className="group relative rounded-full border-2 border-stroke bg-bg px-7 py-3.5 text-sm text-text-primary transition-transform hover:scale-105 hover:border-transparent cursor-pointer"
           >
             <span className="absolute inset-[-2px] rounded-full opacity-0 transition-opacity group-hover:opacity-100 accent-gradient" />
             <span className="relative">Reach out...</span>
