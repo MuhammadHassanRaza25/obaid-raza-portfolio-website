@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Work", href: "/work" },
-  { label: "Resume", href: "/resume" },
+  { label: "Portfolio", href: "/work" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
         >
           <span className="absolute inset-0 rounded-full accent-gradient transition-[background] group-hover:[background:linear-gradient(270deg,#89AACC_0%,#4E85BF_100%)]" />
           <span className="relative flex h-[calc(100%-4px)] w-[calc(100%-4px)] items-center justify-center rounded-full bg-bg">
-            <span className="font-display text-[13px] italic">JA</span>
+            <span className="font-display text-[13px] italic">MOR</span>
           </span>
         </button>
 

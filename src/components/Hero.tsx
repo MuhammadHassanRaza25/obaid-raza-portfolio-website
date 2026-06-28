@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import HLSVideo from "./HLSVideo";
 
-const ROLES = ["Creative", "Fullstack", "Founder", "Scholar"];
+const ROLES = ["Graphic Designer", "Video Editor", "Creative Designer", "Graphic Design Expert"];
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -49,11 +49,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 px-6 text-center">
-        <p className="blur-in mb-8 text-xs uppercase tracking-[0.3em] text-muted">
-          COLLECTION &apos;26
-        </p>
-
-        <h1 className="name-reveal mb-6 font-display text-6xl italic leading-[0.9] tracking-tight text-text-primary md:text-8xl lg:text-9xl">
+        <h1 className="mt-32 name-reveal mb-6 font-display text-6xl italic leading-[0.9] tracking-tight text-text-primary md:text-8xl lg:text-9xl">
           Muhammad Obaid Raza{" "}
         </h1>
 
@@ -65,7 +61,7 @@ export default function Hero() {
           >
             {ROLES[roleIndex]}
           </span>{" "}
-          lives in Chicago.
+          lives in Pakistan.
         </p>
 
         <p className="blur-in mx-auto mb-12 max-w-md text-sm text-muted md:text-base">
@@ -94,14 +90,14 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3">
+      {/* <div className="absolute bottom-0 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3">
         <span className="text-xs uppercase tracking-[0.2em] text-muted">
           SCROLL
         </span>
         <div className="relative h-10 w-px overflow-hidden bg-stroke">
           <div className="absolute left-0 top-0 h-1/2 w-full accent-gradient animate-scroll-down" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

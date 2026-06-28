@@ -14,11 +14,10 @@ export default function Work() {
             ← Back home
           </Link>
           <h1 className="mb-4 font-display text-5xl italic text-text-primary md:text-7xl">
-            All Work
+            Here Is My All Work
           </h1>
           <p className="max-w-md text-muted">
-            A complete archive of projects spanning product design, brand
-            identity, and digital experiences.
+            A collection of Logos, Banners, Posters & Youtube Thumbnail Designs.
           </p>
         </div>
       </main>
